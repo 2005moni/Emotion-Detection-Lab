@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Input</title>
+</head>
+<body>
+    <form method="POST">
+        <input type="text" name="text" placeholder="Enter text">
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if message %}
+        <p style="color: red;">{{ message }}</p>
+    {% endif %}
+</body>
+</html>
